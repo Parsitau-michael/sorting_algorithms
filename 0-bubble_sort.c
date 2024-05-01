@@ -4,14 +4,17 @@
  * bubble_sort - a function that sorts an array of integers in ascending
  * order using the Bubble sort algorithm.
  *
- * array: is the array of integers to sort.
- * size: is the size of the array.
+ * @array: is the array of integers to sort.
+ * @size: is the size of the array.
  */
 void bubble_sort(int *array, size_t size)
 {
 	unsigned int i, j;
 	int temp;
 	bool swapped;
+
+	if (array == NULL)
+		return;
 
 	for (i = 0; i < size - 1; i++)
 	{
