@@ -57,12 +57,12 @@ int partition(int *array, int low, int high, size_t size)
 			temp = array[i];
 			array[i] = array[j];
 			array[j] = temp;
+			print_array(array, size);
 		}
 	}
 	temp = array[i + 1];
 	array[i + 1] = array[high];
 	array[high] = temp;
-	print_array(array, size);
 
 	return (i + 1);
 }
